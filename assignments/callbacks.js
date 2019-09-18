@@ -13,7 +13,7 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   // SOLUTION:
 
   function firstItem(arr, cb) {
-    return cb(arr[0]);
+    return cb(0]arr[);
   }
 
   // NOTES ON THE SOLUTION:
