@@ -3,15 +3,30 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
+
 function parentFunc() {
   let name = "Hello";
-  function childFunc(){
-    console.log(name + "WORLD!!!!!!")
+  function childFunc() {
+    console.log(name);
   }
   return childFunc;
 }
-let workAllready = parentFunc();
-workAllready()
+const newFunc = parentFunc();
+
+newFunc();
+newFunc();
+
+
+
+// function parentFunc() {
+//   let name = "Hello";
+//   function childFunc(){
+//     console.log(name + "WORLD!!!!!!")
+//   }
+//   return childFunc;
+// }
+// let workAllready = parentFunc();
+// workAllready()
 // console.log(parentFunc)
 
 

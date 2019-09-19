@@ -99,5 +99,5 @@ console.log(cheapos)
 
 
 // Problem 3
- const nameTooLong = runners.filter(i => i.first_name.length > 8);
- console.log(nameTooLong)
+const nameTooLong = runners.filter(i => i.first_name.length > 8);
+console.log(nameTooLong)
