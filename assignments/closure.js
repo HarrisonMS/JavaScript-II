@@ -11,11 +11,18 @@
 // ==== Challenge 2: Implement a "counter maker" function ====
 const counterMaker = () => {
   let count = 0;
-  return function() {
-    return count++;
-  }
+  function counter() {
+  return count++;
+  } 
 };
-console.log(counterMaker(1));
+const counterMaker1 = counterMaker();
+console.log(counterMaker1())
+  //   let count = 0;
+//   return function() {
+//     return count++;
+//   }
+// };
+
   // IMPLEMENTATION OF counterMaker:
   // 1- Declare a `count` variable with a value of 0. We will be mutating it, so declare it using `let`!
   // 2- Declare a function `counter`. It should increment and return `count`.
